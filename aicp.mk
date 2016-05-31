@@ -19,7 +19,7 @@ TARGET_SCREEN_HEIGHT := 480
 TARGET_SCREEN_WIDTH := 600
 
 # Inherit common CM configuration
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 # CyanogenMod specific overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/espresso3g/overlay/cm
@@ -29,4 +29,4 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/espressowifi/overlay/cm-common
 $(call inherit-product, device/samsung/espresso3g/aosp_espresso3g.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := cm_espresso3g
+PRODUCT_NAME := aicp_espresso3g
